@@ -166,15 +166,20 @@ USE_TZ = True
 
 CORS_ALLOW_ALL_ORIGINS = True
 
+CORS_ALLOWED_ORIGINS = [
+    'https://aifeglobal-nu.vercel.app',
+]
+
+
 
 # CORS_ALLOWED_ORIGINS = ['True',
-#     # 'https://wikitube-django-backend.vercel.app',
-#     # 'https://www.wikitube.io',
-#     # 'http://localhost:3000',
-#     # 'http://127.0.0.1:3000',
-#     # 'https://microsim.vercel.app',
-#     # 'https://micro-sim-backend.vercel.app'
-# ]
+# #     # 'https://wikitube-django-backend.vercel.app',
+# #     # 'https://www.wikitube.io',
+# #     # 'http://localhost:3000',
+# #     # 'http://127.0.0.1:3000',
+# #     # 'https://microsim.vercel.app',
+# #     # 'https://micro-sim-backend.vercel.app'
+# # ]
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
